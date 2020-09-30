@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Issue Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <div class="container">
+      <h1>Project Issue Tracker </h1>
+      <table class="table-striped border-success"> 
+        <thead> 
+          <tr> 
+            <th data-field="projectID"> 
+              <span class="text-success"> 
+                Project ID 
+              </span> 
+            </th> 
+            <th data-field="Name"> 
+              <span class="text-success"> 
+                Project Name  
+              </span> 
+            </th> 
+            <th data-field="Technology"> 
+              <span class="text-success"> 
+                Technology  
+              </span> 
+            </th> 
+            <th data-field="TeamMembers"> 
+                <span class="text-success"> 
+                    Team Members
+                </span> 
+              </th> 
+              <th data-field="startdate"> 
+                <span class="text-success"> 
+                  Start Date 
+                </span> 
+              </th> 
+              <th data-field="EndDate"> 
+                <span class="text-success"> 
+                  End Date  
+                </span> 
+              </th> 
+          </tr> 
+        </thead> 
+      </table> 
+         
+<!-- login-form -->
+      <div class="login">
+        <div class="login-header">
+            <h1>Department Login</h1>
+        </div>
+        <div class="login-form">
+           <input type="text" placeholder="Enter project id" />
+        </div>
+        <div class="btclass">
+           <input class="button" onclick="loginAction()" type="button" value="Login"> 
+        </div>
+   </div>
+   
+    <!-- login-form ends -->
+
+    <!--drop down form-->
+    
+      <div class="drpdwn">
+          <select id="selid">
+              <option id="opid"></option>
+          </select>
+     </div>
+    </div>
+
+    <!--drop down form ends-->
+
+
+
+
+
+
+
+
+
+      <!-- <div class="jumbotron">
+        <h3>Add New Issue:</h3>
+        <form id="issueInputForm">
+          <div class="form-group">
+            <label for="issueDescInput">Description</label>
+            <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue ...">
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="issuesList">
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src= "https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+    <script src="index.js"></script>
+   
+  </body>
+</html>
